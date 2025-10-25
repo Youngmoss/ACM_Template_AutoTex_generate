@@ -83,7 +83,3 @@ xelatex output.tex
 - The script only requires Python standard libraries.  
 - LaTeX compilation requires packages like `xeCJK`, `listings`, and `xcolor`. A recent TeX distribution (TeX Live or MiKTeX) is recommended.  
 - Compile with XeLaTeX to ensure proper font support.
-
----
-
-如果你需要，我可以帮你生成更详细的文档或示例。
