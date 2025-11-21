@@ -31,8 +31,7 @@ def generate_latex(base_path, output_path="output.tex"):
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(r"""
-\documentclass[10pt,a4paper]{article}
-\usepackage{xeCJK}
+\documentclass[utf8,a4paper,10pt] {ctexart}
 \usepackage{amsmath, amsthm}
 \usepackage{listings,xcolor}
 \usepackage{geometry} 
@@ -41,6 +40,7 @@ def generate_latex(base_path, output_path="output.tex"):
 \usepackage[colorlinks]{hyperref}
 \usepackage{setspace}
 \usepackage{fancyhdr}
+\CJKfamily{zhyahei}
 
 \setsansfont{Consolas} 
 \setmonofont[Mapping={}]{Consolas} 
@@ -91,7 +91,6 @@ def generate_latex(base_path, output_path="output.tex"):
 \author{daonali}
 \maketitle
 \tableofcontents
-\newpage
 """)
 
         current_dirs = []
